@@ -14,7 +14,7 @@ const TodoFilter: React.FC = () => {
   };
 
   return (
-    <Flex style={{ marginTop: "10px" }}>
+    <Flex gap={"10px"} style={{ marginTop: "10px" }}>
       <Button
         type={filter === `${FilterEnum.ALL}` ? "primary" : "default"}
         onClick={() => handleFilterChange(FilterEnum.ALL)}
